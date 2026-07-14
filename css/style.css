@@ -239,3 +239,45 @@ button {
 	line-height: 1.2;
 	color: rgba(25, 25, 25, 0.43);
 }
+
+/* === Section Atmosphere 1920*960px === */
+
+.atmosphere {
+	background-image: url('../images/atmosphere-bg.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 40px;
+	padding-bottom: 114px;
+	min-height: 100vh;
+}
+
+.atmosphere__box {
+	max-width: 968px;
+	padding-block: 20px;
+	padding-inline: 44px;
+	border-radius: 20px;
+	text-align: center;
+	margin: 0 auto;
+	background: rgba(11, 13, 19, 0.3);
+	backdrop-filter: blur(12px);
+}
+
+.atmosphere__title {
+	font-family: 'Tilt Warp', sans-serif;
+	font-weight: 400;
+	font-size: 100px;
+	line-height: 89px;
+	letter-spacing: -5px;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	color: #d6f1ca;
+}
+
+
+
+.atmosphere__list {
+}
+
+.atmosphere__item {
+}
