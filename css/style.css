@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 *,
@@ -171,10 +172,9 @@ button {
 }
 
 /* === Section Players 1720*664px === */
-
 .players {
-	background-color: #191919;
 	padding-block: 100px;
+	background-color: #191919;
 }
 
 .players__title {
@@ -192,19 +192,50 @@ button {
 	display: flex;
 	justify-content: space-between;
 	gap: 20px;
+	padding-top: 140px;
 }
 
 .players__item {
+	position: relative;
+	height: 415px;
+	width: 100%;
+	padding: 10px;
+	backdrop-filter: blur(50px);
+	background: rgba(255, 255, 255, 0.1);
 }
 
 .players__img {
+	position: absolute;
+	right: 0;
+	bottom: 60px;
+	left: 0;
+	margin: 0 auto;
 }
 
 .players__item-box {
+	position: absolute;
+	right: 20px;
+	bottom: 24px;
+	left: 20px;
+	padding-block: 24px;
+	padding-inline: 20px;
+	background-color: #fff;
 }
 
 .players__item-name {
+	font-family: 'Tilt Warp', sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 30px;
+	letter-spacing: -1px;
+	margin-bottom: 10px;
+	color: #191919;
 }
 
-.descr {
+.players__item-descr {
+	font-family: 'Geist Mono', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.2;
+	color: rgba(25, 25, 25, 0.43);
 }
