@@ -1,3 +1,9 @@
+:root {
+	--font-family: 'Geist Mono', monospace;
+	--second-family: 'Tilt Warp', sans-serif;
+	--text-color: #d6f1ca;
+}
+
 html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
@@ -19,11 +25,11 @@ ul {
 }
 
 body {
-	font-family: 'Geist Mono', monospace;
+	font-family: var(--font-family);
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 1.2;
-	color: #d6f1ca;
+	color: var(--text-color);
 }
 
 button {
@@ -90,7 +96,7 @@ button {
 }
 
 .top-title {
-	font-family: 'Tilt Warp', sans-serif;
+	font-family: var(--second-family);
 	font-size: 150px;
 	font-weight: 400;
 	line-height: 160px;
@@ -120,7 +126,7 @@ button {
 }
 
 .event__title {
-	font-family: 'Tilt Warp', sans-serif;
+	font-family: var(--second-family);
 	max-width: 1130px;
 	font-size: 100px;
 	font-weight: 400;
@@ -164,7 +170,7 @@ button {
 }
 
 .event__list-item dd {
-	font-family: 'Tilt Warp', sans-serif;
+	font-family: var(--second-family);
 	font-size: 150px;
 	font-weight: 400;
 	letter-spacing: -6px;
@@ -178,7 +184,7 @@ button {
 }
 
 .players__title {
-	font-family: 'Tilt Warp', sans-serif;
+	font-family: var(--second-family);
 	font-weight: 400;
 	font-size: 100px;
 	line-height: 89px;
@@ -223,7 +229,7 @@ button {
 }
 
 .players__item-name {
-	font-family: 'Tilt Warp', sans-serif;
+	font-family: var(--second-family);
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 30px;
@@ -233,7 +239,7 @@ button {
 }
 
 .players__item-descr {
-	font-family: 'Geist Mono', sans-serif;
+	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 1.2;
@@ -241,15 +247,19 @@ button {
 }
 
 /* === Section Atmosphere 1920*960px === */
-
 .atmosphere {
 	background-image: url('../images/atmosphere-bg.jpg');
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.atmosphere__inner {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	padding-top: 40px;
 	padding-bottom: 114px;
-	min-height: 100vh;
 }
 
 .atmosphere__box {
@@ -258,25 +268,28 @@ button {
 	padding-inline: 44px;
 	border-radius: 20px;
 	text-align: center;
-	margin: 0 auto;
+	margin: 0 auto auto;
 	background: rgba(11, 13, 19, 0.3);
 	backdrop-filter: blur(12px);
 }
 
 .atmosphere__title {
-	font-family: 'Tilt Warp', sans-serif;
+	font-family: var(--second-family);
 	font-weight: 400;
 	font-size: 100px;
 	line-height: 89px;
 	letter-spacing: -5px;
 	text-transform: uppercase;
 	margin-bottom: 40px;
-	color: #d6f1ca;
+	color: var(--text-color);
 }
 
-
-
 .atmosphere__list {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	font-size: 16px;
+	border-top: 1px solid rgba(214, 241, 202, 0.2);
 }
 
 .atmosphere__item {
