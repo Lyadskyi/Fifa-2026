@@ -292,5 +292,34 @@ button {
 	border-top: 1px solid rgba(214, 241, 202, 0.2);
 }
 
-.atmosphere__item {
+/* === Section Matches 1920*960px === */
+.matches {
+	background-image: url('../images/matches-bg.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 237px 0;
+	text-align: center;
+}
+
+.matches__title {
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 100px;
+	line-height: 89px;
+	letter-spacing: -5px;
+	text-transform: uppercase;
+	margin: 0 auto 40px;
+	max-width: 785px;
+}
+
+.matches__text {
+	max-width: 577px;
+	margin: 0 auto 40px;
+}
+
+.matches__btn {
+	display: inline-block;
+	padding: 20px 15px;
+	background-color: #138561;
 }
