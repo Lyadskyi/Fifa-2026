@@ -293,6 +293,42 @@ button {
 	border-top: 1px solid rgba(214, 241, 202, 0.2);
 }
 
+/* === Section Slider 1920*581px === */
+.slider {
+	padding: 100px 0;
+	background-color: #191919;
+}
+
+.slider__content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 59px;
+}
+
+.slider__content-img {
+	border-radius: 30px;
+}
+
+.slider__content-text {
+	max-width: 694px;
+	color: #fff;
+}
+
+.slider__content-text p {
+	margin-bottom: 22px;
+}
+
+.slider__content-name {
+	margin-bottom: 10px;
+}
+
+.slider__content-descr {
+	margin-bottom: 0;
+	font-size: 16px;
+	color: #b6b6b8;
+}
+
 /* === Section Matches 1920*960px === */
 .matches {
 	background-image: url('../images/matches-bg.jpg');
@@ -326,12 +362,12 @@ button {
 }
 
 /* === Footer 1920*189px === */
-.footer{
+.footer {
 	padding: 40px 0 79px;
 	background-color: #191919;
 }
 
-.footer__top{
+.footer__top {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
