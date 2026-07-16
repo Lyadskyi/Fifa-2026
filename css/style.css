@@ -2,6 +2,7 @@
 	--font-family: 'Geist Mono', monospace;
 	--second-family: 'Tilt Warp', sans-serif;
 	--text-color: #d6f1ca;
+	--button: #138561;
 }
 
 html {
@@ -46,7 +47,7 @@ button {
 	margin: 0 auto;
 }
 
-/* === Header 1720*36px === */
+/* === Header 1920*136px === */
 .header {
 	background-color: #191919;
 }
@@ -116,7 +117,7 @@ button {
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 1;
-	background-color: #138561;
+	background-color: var(--button);
 }
 
 /* === Section Event 1920*1135px === */
@@ -304,13 +305,13 @@ button {
 
 .matches__title {
 	font-family: var(--second-family);
+	max-width: 785px;
 	font-weight: 400;
 	font-size: 100px;
 	line-height: 89px;
 	letter-spacing: -5px;
 	text-transform: uppercase;
 	margin: 0 auto 40px;
-	max-width: 785px;
 }
 
 .matches__text {
@@ -321,5 +322,24 @@ button {
 .matches__btn {
 	display: inline-block;
 	padding: 20px 15px;
-	background-color: #138561;
+	background-color: var(--button);
+}
+
+/* === Footer 1920*189px === */
+.footer{
+	padding: 40px 0 79px;
+	background-color: #191919;
+}
+
+.footer__top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 13px;
+}
+
+.footer__copy {
+	font-size: 13px;
+	line-height: 21px;
+	color: rgba(214, 241, 202, 0.7);
 }
