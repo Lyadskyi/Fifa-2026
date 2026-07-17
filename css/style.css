@@ -299,11 +299,19 @@ button {
 	background-color: #191919;
 }
 
+.swiper {
+	background-image: url('../images/slider-bg.svg');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .slider__content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 59px;
+	padding: 80px 0;
 }
 
 .slider__content-img {
@@ -327,6 +335,44 @@ button {
 	margin-bottom: 0;
 	font-size: 16px;
 	color: #b6b6b8;
+}
+
+.swiper-pagination {
+	position: absolute;
+	bottom: 80px;
+	display: inline-flex;
+	justify-content: flex-end;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.33333;
+	color: #fff;
+}
+
+.slider-btn {
+	position: absolute;
+	z-index: 10;
+	cursor: pointer;
+	top: 86px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.slider-button-prev {
+	transform: rotate(180deg);
+	left: 0;
+}
+
+.slider-button-next {
+	right: 0;
+}
+
+.swiper-button-disabled {
+	display: none;
 }
 
 /* === Section Matches 1920*960px === */
