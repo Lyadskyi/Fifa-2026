@@ -425,3 +425,17 @@ button {
 	line-height: 21px;
 	color: rgba(214, 241, 202, 0.7);
 }
+
+@media (max-width: 1200px) {
+	
+}
+
+@media (max-width: 420px) {
+	.menu{
+		display: none;
+	}
+
+	.top-title{
+		font-size: 80px;
+	}
+}
